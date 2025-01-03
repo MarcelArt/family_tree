@@ -1,8 +1,8 @@
 package api_handlers
 
 import (
-	"github.com/MarcelArt/app_standard/models"
-	"github.com/MarcelArt/app_standard/repositories"
+	"github.com/MarcelArt/family_tree/models"
+	"github.com/MarcelArt/family_tree/repositories"
 	"github.com/gofiber/fiber/v2"
 )
 
@@ -36,7 +36,7 @@ func (h *BaseCrudHandler[TModel, TDto, TPage]) Create(c *fiber.Ctx) error {
 // @Param size query int false "Size"
 // @Param sort query string false "Sort"
 // @Param filters query string false "Filter"
-// @Success 200 {array} paginate.Page
+// @Success 200 {array} interface{}
 // @Router /{resources} [get]
 func (h *BaseCrudHandler[TModel, TDto, TPage]) Read(c *fiber.Ctx) error {
 	var dest []TPage

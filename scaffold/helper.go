@@ -5,7 +5,7 @@ import (
 	"unicode"
 )
 
-const moduleName = "github.com/MarcelArt/app_standard"
+const moduleName = "github.com/MarcelArt/family_tree"
 
 // ToCamelCase converts a TitleCase string into titleCase
 func ToCamelCase(input string) string {

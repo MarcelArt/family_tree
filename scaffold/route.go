@@ -11,8 +11,8 @@ package routes
 
 import (
 	"${moduleName}/database"
-	api_handlers "github.com/MarcelArt/app_standard/handlers/api"
-	"github.com/MarcelArt/app_standard/repositories"
+	api_handlers "github.com/MarcelArt/family_tree/handlers/api"
+	"github.com/MarcelArt/family_tree/repositories"
 	"github.com/gofiber/fiber/v2"
 )
 

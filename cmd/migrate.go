@@ -3,7 +3,7 @@ package cmd
 import (
 	"os"
 
-	"github.com/MarcelArt/app_standard/database"
+	"github.com/MarcelArt/family_tree/database"
 )
 
 func Migrate(arg string) {

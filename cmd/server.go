@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/MarcelArt/app_standard/config"
-	"github.com/MarcelArt/app_standard/database"
-	"github.com/MarcelArt/app_standard/routes"
+	"github.com/MarcelArt/family_tree/config"
+	"github.com/MarcelArt/family_tree/database"
+	"github.com/MarcelArt/family_tree/routes"
 	"github.com/gofiber/fiber/v2"
 )
 

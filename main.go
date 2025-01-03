@@ -3,9 +3,9 @@ package main
 import (
 	"os"
 
-	"github.com/MarcelArt/app_standard/cmd"
-	_ "github.com/MarcelArt/app_standard/config"
-	_ "github.com/MarcelArt/app_standard/docs"
+	"github.com/MarcelArt/family_tree/cmd"
+	_ "github.com/MarcelArt/family_tree/config"
+	_ "github.com/MarcelArt/family_tree/docs"
 )
 
 // @title Fiber Example API
