@@ -17,5 +17,7 @@ func SetupRoutes(app *fiber.App) {
 		DeepLinking: false,
 	}))
 
-	// api := app.Group("/api")
+	api := app.Group("/api")
+	SetupPersonRoutes(api)
+	SetupParentRoutes(api)
 }

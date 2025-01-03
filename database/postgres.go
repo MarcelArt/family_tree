@@ -5,6 +5,7 @@ import (
 	"strconv"
 
 	"github.com/MarcelArt/family_tree/config"
+	"github.com/MarcelArt/family_tree/models"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
@@ -39,11 +40,17 @@ func GetDB() *gorm.DB {
 }
 
 func MigrateDB() {
-	db.AutoMigrate()
+	db.AutoMigrate(
+		&models.Person{},
+		&models.Parent{},
+	)
 	fmt.Println("Database Migrated")
 }
 
 func DropDB() {
-	db.Migrator().DropTable()
+	db.Migrator().DropTable(
+		&models.Person{},
+		&models.Parent{},
+	)
 	fmt.Println("Database Droped")
 }
